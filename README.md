@@ -30,8 +30,9 @@ The code of this repository is licensed under [Aapache Licence 2.0](https://www.
 ### Checkpoints
 If you agree to the above license, please download checkpoints from the corresponding repository and put them in the checkpoints folder.
 
-[CarsiDock](https://github.com/carbonsilicon-ai/CarsiDock/tree/main)
-[RTMScore]((https://github.com/sc8668/RTMScore/tree/main))
+[CarsiDock](https://github.com/carbonsilicon-ai/CarsiDock/tree/main)  
+[RTMScore](https://github.com/sc8668/RTMScore/tree/main)   
+
 
 
 
