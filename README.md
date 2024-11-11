@@ -22,7 +22,7 @@ scikit-learn==1.3.2
 pandas==2.0.3   
 
 ### Datasets
-The datasets employed for the validation of our approach have been shared at Zenodo.
+The datasets employed for the validation of our approach have been shared at [Zenodo](https://zenodo.org/uploads/14064834).
 
 ### License
 The code of this repository is licensed under [Aapache Licence 2.0](https://www.apache.org/licenses/LICENSE-2.0). CarsiDock-Cov directly ueses the model trained in [CarsiDock](https://github.com/carbonsilicon-ai/CarsiDock/tree/main) to predict the protein-ligand distance matrices, so the use of the CarsiDock model weights should follow the Model License. CarsiDock weights are completely open for academic research, please contact bd@carbonsilicon.ai for commercial use.
