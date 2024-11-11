@@ -24,6 +24,15 @@ pandas==2.0.3
 ### Datasets
 The datasets employed for the validation of our approach have been shared at [Zenodo](https://zenodo.org/uploads/14064834).
 
+### License
+The code of this repository is licensed under [Aapache Licence 2.0](https://www.apache.org/licenses/LICENSE-2.0). CarsiDock-Cov directly ueses the model trained in [CarsiDock](https://github.com/carbonsilicon-ai/CarsiDock/tree/main) to predict the protein-ligand distance matrices, so the use of the CarsiDock model weights should follow the Model License. CarsiDock weights are completely open for academic research, please contact bd@carbonsilicon.ai for commercial use.
+
+### Checkpoints
+If you agree to the above license, please download checkpoints from the corresponding repository and put them in the checkpoints folder.
+
+[CarsiDock](https://github.com/carbonsilicon-ai/CarsiDock/tree/main)  
+[RTMScore](https://github.com/sc8668/RTMScore/tree/main)   
+
 ### Examples for using our protocol for covalent docking
 ___# Docking using the SMILES as input___
 ```
@@ -43,16 +52,5 @@ python run_carsidockcov_screening.py -p ./example_data/2qlq_p.pdb -rl ./example_
 -l ./example_data/covvs.sdf -covres "A:CYS:345" \
 -rectype 'Michael Addition' -remove_dummyatom -remain_pocket -o './example_data/2qlq_out'  
 ```
-
-### License
-The code of this repository is licensed under [Aapache Licence 2.0](https://www.apache.org/licenses/LICENSE-2.0). CarsiDock-Cov directly ueses the model trained in [CarsiDock](https://github.com/carbonsilicon-ai/CarsiDock/tree/main) to predict the protein-ligand distance matrices, so the use of the CarsiDock model weights should follow the Model License. CarsiDock weights are completely open for academic research, please contact bd@carbonsilicon.ai for commercial use.
-
-### Checkpoints
-If you agree to the above license, please download checkpoints from the corresponding repository and put them in the checkpoints folder.
-
-[CarsiDock](https://github.com/carbonsilicon-ai/CarsiDock/tree/main)  
-[RTMScore](https://github.com/sc8668/RTMScore/tree/main)   
-
-
 
 
