@@ -24,6 +24,26 @@ pandas==2.0.3
 ### Datasets
 The datasets employed for the validation of our approach have been shared at [Zenodo](https://zenodo.org/uploads/14064834).
 
+### Examples for using our protocol for covalent docking
+___# Docking using the SMILES as input___
+```
+python run_carsidockcov.py -p ./example_data/2qlq_p.pdb -rl ./example_data/2qlq_l.sdf \
+-smi "CN(C)C/C=C/C(=O)Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1" -covres "A:CYS:345" \
+-rectype 'Michael Addition' -remove_dummyatom -remain_pocket -o './example_data/2qlq_out' 
+```
+___# Docking using the sdf as input___
+```
+python run_carsidockcov.py -p ./example_data/2qlq_p.pdb -rl ./example_data/2qlq_l.sdf \
+-l ./example_data/2qlq_l_orig.sdf -covres "A:CYS:345" \
+-rectype 'Michael Addition' -remove_dummyatom -remain_pocket -o './example_data/2qlq_out'  
+```
+___# Virtual screening___
+```
+python run_carsidockcov_screening.py -p ./example_data/2qlq_p.pdb -rl ./example_data/2qlq_l.sdf \
+-l ./example_data/covvs.sdf -covres "A:CYS:345" \
+-rectype 'Michael Addition' -remove_dummyatom -remain_pocket -o './example_data/2qlq_out'  
+```
+
 ### License
 The code of this repository is licensed under [Aapache Licence 2.0](https://www.apache.org/licenses/LICENSE-2.0). CarsiDock-Cov directly ueses the model trained in [CarsiDock](https://github.com/carbonsilicon-ai/CarsiDock/tree/main) to predict the protein-ligand distance matrices, so the use of the CarsiDock model weights should follow the Model License. CarsiDock weights are completely open for academic research, please contact bd@carbonsilicon.ai for commercial use.
 
